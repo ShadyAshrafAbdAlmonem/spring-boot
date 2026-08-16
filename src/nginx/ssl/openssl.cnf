@@ -1,0 +1,15 @@
+[req]
+distinguished_name = req_dn
+x509_extensions = v3_req
+prompt = no
+[req_dn]
+C = US
+ST = CA
+L = San Francisco
+O = Dev
+CN = localhost
+[v3_req]
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = localhost
+IP.1 = 127.0.0.1

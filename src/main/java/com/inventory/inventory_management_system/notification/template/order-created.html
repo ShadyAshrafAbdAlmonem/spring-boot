@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h2>Thank you for your order!</h2>
+    <p>Order Number: <strong th:text="${orderNumber}">SO-10001</strong></p>
+    <p>Total Amount: $<span th:text="${totalAmount}">0.00</span></p>
+</body>
+</html>

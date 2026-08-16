@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Low Stock Alert</title>
+</head>
+<body>
+    <h2>Low Stock Alert Notice</h2>
+    <p>Item <strong th:text="${productName}">Product</strong> (SKU: <span th:text="${sku}">SKU123</span>) is running low.</p>
+    <p>Remaining Stock: <strong th:text="${quantity}">5</strong></p>
+</body>
+</html>
